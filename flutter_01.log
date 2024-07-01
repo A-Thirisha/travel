@@ -1,0 +1,88 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+StateError: Bad state: No element
+
+```
+#0      List.first (dart:core-patch/growable_array.dart:343:5)
+#1      ResidentHandlers.debugTogglePlatform (package:flutter_tools/src/resident_runner.dart:942:26)
+<asynchronous suspension>
+#2      TerminalHandler.processTerminalInput (package:flutter_tools/src/resident_runner.dart:1841:7)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[32m[✓][39m Flutter (Channel stable, 3.22.2, on Microsoft Windows [Version
+    10.0.19045.4529], locale en-SG)
+    [32m•[39m Flutter version 3.22.2 on channel stable at C:\flutter
+    [32m•[39m Upstream repository https://github.com/flutter/flutter.git
+    [32m•[39m Framework revision 761747bfc5 (3 weeks ago), 2024-06-05 22:15:13 +0200
+    [32m•[39m Engine revision edd8546116
+    [32m•[39m Dart version 3.4.3
+    [32m•[39m DevTools version 2.34.3
+
+[32m[✓][39m Windows Version (Installed version of Windows is version 10 or higher)
+
+[33m[!][39m Android toolchain - develop for Android devices (Android SDK version
+    35.0.0)
+    [32m•[39m Android SDK at C:\Users\User\AppData\Local\Android\sdk
+    [31m✗[39m cmdline-tools component is missing
+      Run `path/to/sdkmanager --install "cmdline-tools;latest"`
+      See https://developer.android.com/studio/command-line for more details.
+    [31m✗[39m Android license status unknown.
+      Run `flutter doctor --android-licenses` to accept the SDK licenses.
+      See https://flutter.dev/docs/get-started/install/windows#android-setup
+      for more details.
+
+[32m[✓][39m Chrome - develop for the web
+    [32m•[39m Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[33m[!][39m Visual Studio - develop Windows apps (Visual Studio Community 2019
+    16.11.37)
+    [32m•[39m Visual Studio at C:\Program Files (x86)\Microsoft Visual
+      Studio\2019\Community
+    [32m•[39m Visual Studio Community 2019 version 16.11.34931.43
+    [31m✗[39m Visual Studio is missing necessary components. Please re-run the Visual
+      Studio installer for the "Desktop development with C++" workload, and
+      include these components:
+        MSVC v142 - VS 2019 C++ x64/x86 build tools
+         - If there are multiple build tool versions available, install the
+         latest
+        C++ CMake tools for Windows
+        Windows 10 SDK
+
+[32m[✓][39m Android Studio (version 2024.1)
+    [32m•[39m Android Studio at C:\Program Files\Android\Android Studio
+    [32m•[39m Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    [32m•[39m Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    [32m•[39m Java version OpenJDK Runtime Environment (build 17.0.10+0--11609105)
+
+[32m[✓][39m VS Code (version 1.90.2)
+    [32m•[39m VS Code at C:\Users\User\AppData\Local\Programs\Microsoft VS Code
+    [32m•[39m Flutter extension version 3.90.0
+
+[32m[✓][39m Connected device (4 available)
+    [32m•[39m sdk gphone64 x86 64 (mobile) • emulator-5554 • android-x64    • Android
+      12 (API 31) (emulator)
+    [32m•[39m Windows (desktop)            • windows       • windows-x64    •
+      Microsoft Windows [Version 10.0.19045.4529]
+    [32m•[39m Chrome (web)                 • chrome        • web-javascript • Google
+      Chrome 126.0.6478.126
+    [32m•[39m Edge (web)                   • edge          • web-javascript •
+      Microsoft Edge 126.0.2592.68
+
+[32m[✓][39m Network resources
+    [32m•[39m All expected network resources are available.
+
+[33m![39m Doctor found issues in 2 categories.
+```
